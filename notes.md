@@ -59,3 +59,7 @@ Pseudoselector
 
 `npm install --save`
   - also saves an entry in `package.json` so we also fix the version number and easily share our project
+
+CSS Loader
+  - transforms CSS code in the css file to an object we can use in the js file
+
