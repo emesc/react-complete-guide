@@ -63,3 +63,8 @@ Pseudoselector
 CSS Loader
   - transforms CSS code in the css file to an object we can use in the js file
 
+Higher-order Component
+  - any component that wraps other component, eg, with the goal of handling any errors
+
+Key
+  - always has to be in the outer element in a map method, because that's the element we actually replicate
