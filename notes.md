@@ -49,8 +49,13 @@ this.setState({persons: persons})
 persons was a constant then spliced but arrays & objects are referenced types so it's only holding a pointer, the element it was pointing to can be changed
 
 Spread operator
-- `const persons = this.state.persons.slice()`
-  - #slice without args, simply copies the persons array or better yet:
-- `const persons = [...this.state.persons]`
-  - spread operator simply makes a new array out of the array you're spreading
+  - `const persons = this.state.persons.slice()`
+    - #slice without args, simply copies the persons array or better yet:
+  - `const persons = [...this.state.persons]`
+    - spread operator simply makes a new array out of the array you're spreading
 
+Pseudoselector
+  - in CSS, means a selector based on another selector as indicated by the :
+
+`npm install --save`
+  - also saves an entry in `package.json` so we also fix the version number and easily share our project
