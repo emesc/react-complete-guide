@@ -1,3 +1,26 @@
+## React 16 Complete Guide
+by Max S
+
+### Setup
+`package.json` lists all the dependencies (like Gemfile)
+`rc` means release candidate
+`react-scripts` package offering all the build workflow, the development server, the next gen js feature for support and all the things we'll be using for the project 
+
+`scripts` are scripts that can be run with `npm run <script_name>`
+- `start` starts the server, compiles our code, optimizes the code
+- `build` when you're ready for deploying your app which optimises it even more, not launch a development server but instead get your optimised code stored in a folder. because now you won't see your compiled code anywhere, it all happens in memory
+
+`node-modules` dir holds all the dependencies and sub-dependencies of our project
+
+`public` dir is the root folder that gets served by the server in the end
+- holds the html file that's the SPA
+- you don't need to add more html, all you need is a workflow
+
+script files are in the `source` folder
+
+`manifest.json` because create-react-app gives us a progressive web app out of the box, where we can define some metadata out of our application
+
+### Details
 Component
   - need to still import React because the component has to be transformed to a React.createElement
   - is a function returning some jsx
