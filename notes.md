@@ -91,3 +91,15 @@ Higher-order Component
 
 Key
   - always has to be in the outer element in a map method, because that's the element we actually replicate
+
+React16
+  - `componentWillUpdate`, `componentWillMount`, `componentWillReceiveProps` are discouraged because of frequent incorrect use. eg, you could call `setState` there and possibly defer the first render
+  - offers new ones
+    - `getDerivedStateFromProps(nextProps, prevState)` and `getSnapshotBeforeUpdate()`
+
+CSS Modules
+  ```css
+  modules: true,
+  localIdentName: '[name]__[local]__[hash:base64:5]',
+  ```
+  `localIdentName` generates unique CSS class names and assign automatically once imported to the object from the css file; takes the original name then the local name of the component and a randomly generated hash with base64
